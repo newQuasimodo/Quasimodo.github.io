@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    perspective: 1000px;
+    /* background: linear-gradient(91deg, #f1eefc, #9dc6ff 70%, #a5bcff) */
+}
+
+#start,
+#startagain {
+    position: relative;
+    top: 0;
+    left: 40%;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #2c2540,#171520 ) no-repeat;
+    outline: none;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+#startagain {
+    position: absolute;
+    top: 0;
+    left: 55%;
+}
+
+.warp {
+    position: relative;
+    width: 120px;
+    height: 180px;
+    margin: 200px auto;
+    transform-style: preserve-3d;
+}
+
+li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 180px;
+    list-style: none;
+    background: url(../bg.png) no-repeat center/cover;
+    transition: all 1s linear;
+}
+
+li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 添加类名 li开始动画 */
+
+.card1.toout {
+    transform: translateZ(350px);
+}
+
+.card2.toout {
+    transform: rotateY(36deg) translateZ(350px);
+}
+
+.card3.toout {
+    transform: rotateY(72deg) translateZ(350px);
+}
+
+.card4.toout {
+    transform: rotateY(108deg) translateZ(350px);
+}
+
+.card5.toout {
+    transform: rotateY(144deg) translateZ(350px);
+}
+
+.card6.toout {
+    transform: rotateY(180deg) translateZ(350px);
+}
+
+.card7.toout {
+    transform: rotateY(216deg) translateZ(350px);
+}
+
+.card8.toout {
+    transform: rotateY(252deg) translateZ(350px);
+}
+
+.card9.toout {
+    transform: rotateY(288deg) translateZ(350px);
+}
+
+.card10.toout {
+    transform: rotateY(324deg) translateZ(350px);
+}
+
+/* 给UL添加一个旋转的动画 */
+
+.warp.active {
+    animation: rotate 3s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* 动画结束后 li 平铺*/
+li.rotate {
+    transform: rotateY(180deg);
+}
+
+.card1.repeat {
+    top: -170px;
+    left: -600px;
+}
+
+.card2.repeat {
+    top: -170px;
+    left: -300px;
+}
+
+.card3.repeat {
+    top: -170px;
+    left: 0;
+}
+
+.card4.repeat {
+    top: -170px;
+    left: 300px;
+}
+
+.card5.repeat {
+    top: -170px;
+    left: 600px;
+}
+
+.card6.repeat {
+    top: 170px;
+    left: -600px;
+}
+
+.card7.repeat {
+    top: 170px;
+    left: -300px;
+}
+
+.card8.repeat {
+    top: 170px;
+    left: 0;
+}
+
+.card9.repeat {
+    top: 170px;
+    left: 300px;
+}
+
+.card10.repeat {
+    top: 170px;
+    left: 600px;
+}
