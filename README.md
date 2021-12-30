@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/newQuasimodo/Quasimodo.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/newQuasimodo/Quasimodo.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+人生苦短，生命渺若尘埃.
+我们在拥有了物质的同时，
+也就拥有了心灵的歌声.
+而吾所建之小博，非为其他，乃为品文、赏乐及交友所用.
+盖以博伊人颦笑，
+所作稍逊阳刚.
+望公等休怪.
+吾素来甚少品赏俗乐
+亦不愿心附当红之优伶.
+虽知此违世风所行.
+然执着之气终未有改.
+呜呼，今之靡音皆流于世，
+古之风雅多遗于土.
+庸风淫乐视太祖之季有加,
+而身怀才德者不得行其道，
+此久为予所睹，恨也.
+吾深知普雅之事难有其为，
+故有仿效陶朱之意，
+隐匿山水之心，
+只惜居无西施同伴，
+行乏子期相交.
+终日茕茕孑立，形影相吊，
+惟以小博赏心悦目，趣矣。
+故曰:"宠辱不惊，看庭前花开花落;
+去留无意，望天空云卷云舒."
+吾虽有铁血主博微美于小博，
+然其所载密文甚多
+亦不能表于诸君，甚惜之.
+公等若有雅言可尽著于文簿之上，
+或以信函相告.必察而复焉：
+<17727540070@163.com>
+望诸公于此园尽兴，
+予再拜，进尽甘言.
+共和二八五零年 霖月
+欲将心事付瑶琴.知音少,
+弦断有谁听？
