@@ -162,6 +162,8 @@ export default {
  
  .aplayer{
    margin:5px 0px;
+   background-color: #262335;
+   color: #6f6b64;
  }
  
 </style>

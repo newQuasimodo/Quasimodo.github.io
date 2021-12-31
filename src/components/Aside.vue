@@ -47,32 +47,56 @@
       >
         <el-submenu index="1">
           <template slot="title">
-             <i class="iconfont icon-fenlei"></i>
-          <span style="font-size:16px;margin-left:15px">分类</span>
+            <i class="iconfont icon-fenlei"></i>
+            <span style="font-size: 16px; margin-left: 15px">分类</span>
           </template>
-          <el-menu-item style="padding-left: 0px !important;margin-left:40px" index="1-1"
+          <el-menu-item
+            style="padding-left: 0px !important; margin-left: 40px"
+            index="1-1"
             >选项1</el-menu-item
           >
-          <el-menu-item style="padding-left: 0px !important;margin-left:40px" index="1-2"
+          <el-menu-item
+            style="padding-left: 0px !important; margin-left: 40px"
+            index="1-2"
             >选项2</el-menu-item
           >
         </el-submenu>
         <el-submenu index="2">
           <template slot="title">
-             <i class="iconfont icon-lianjie"></i>
-          <span style="font-size:16px;margin-left:15px">友链</span>
+            <i class="iconfont icon-lianjie"></i>
+            <span style="font-size: 16px; margin-left: 15px">友链</span>
           </template>
-          <el-menu-item style="padding-left: 0px !important;margin-left:40px" index="2-1"
+          <el-menu-item
+            style="padding-left: 0px !important; margin-left: 40px"
+            index="2-1"
             >选项1</el-menu-item
           >
-          <el-menu-item style="padding-left: 0px !important;margin-left:40px" index="2-2"
+          <el-menu-item
+            style="padding-left: 0px !important; margin-left: 40px"
+            index="2-2"
             >选项2</el-menu-item
           >
-          <el-menu-item style="padding-left: 0px !important;margin-left:40px" index="2-3"
+          <el-menu-item
+            style="padding-left: 0px !important; margin-left: 40px"
+            index="2-3"
             >选项3</el-menu-item
           >
         </el-submenu>
       </el-menu>
+    </div>
+    <div class="item2">
+      <a class="management">
+        <i class="iconfont icon-shezhi"></i>
+        <h1>管理</h1>
+      </a>
+      <a class="article">
+        <i class="iconfont icon-wenzhang"></i>
+        <h1>文章</h1>
+      </a>
+      <a class="comments">
+        <i class="iconfont icon-pinglun"></i>
+        <h1>评论</h1>
+      </a>
     </div>
   </div>
 </template>
@@ -94,7 +118,7 @@ export default {
 <style lang="less" scoped>
 .aside {
   min-height: 100vh;
-  background-color: #3b95d1;
+  background-color: #262335;
   .home {
     font-size: 20px;
     font-weight: 700;
@@ -102,6 +126,7 @@ export default {
     text-align: left;
   }
   .top {
+    color: grey;
     .avatar:hover {
       transform: rotate(666turn);
       transition-delay: 1s;
@@ -126,6 +151,9 @@ export default {
           margin-right: 15px;
         }
       }
+      a:hover {
+        color: #409eff;
+      }
     }
   }
   .item1 {
@@ -139,6 +167,36 @@ export default {
   /deep/.el-submenu .el-menu-item {
     padding: 0px;
     min-width: 120px;
+  }
+  /deep/.el-submenu__title:hover {
+    background-color: transparent !important;
+    color: #409eff !important;
+  }
+  /deep/.el-menu-item:hover {
+    background-color: transparent !important;
+    color: #409eff !important;
+  }
+  .item2 {
+    height: 45px;
+    border-top: 1px solid gray;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 10px;
+    font-size: 12px;
+    padding-top: 5px;
+     color: #6f6b64;
+     a:hover{
+        color: #409eff;
+        text-decoration:none;
+        cursor: pointer;
+     }
+     h1{
+       display: block;
+       height: 15px;
+       line-height: 15px;
+     }
   }
 }
 </style>
