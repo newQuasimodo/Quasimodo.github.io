@@ -21,18 +21,18 @@
       >
       </vue-particles>
     </div>
-    <el-container id="container">
-       <el-aside width="10vw">
+    <el-container id="container" style="width:100%;clear:both;">
+      <el-aside  width="15%">
         <Aside />
-       </el-aside>
+      </el-aside>
       <el-container>
-        <el-header>
+        <el-header  height="80px">
           <Header />
         </el-header>
-        <el-main>
+        <el-main >
           <Main />
         </el-main>
-        <el-footer>
+        <el-footer width="85%">
           <Footer />
         </el-footer>
       </el-container>
@@ -48,7 +48,7 @@ import Footer from "@/components/Footer.vue";
 import { list } from "@/api/api.js";
 export default {
   name: "Home",
-  components: { Header, Main, Footer,Aside },
+  components: { Header, Main, Footer, Aside },
   data() {
     return {};
   },
@@ -64,15 +64,36 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.home{
+.home {
   text-align: center;
   margin: 0 auto;
-  max-width: 1300px;
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 96%;
-}
+  width: 1300px;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .el-aside{
+    position: fixed;
+    top: 0;
+    
+  }
+  .el-header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin-left: 15%;
+    z-index: 999;
+    background-color: #131516;
+  }
+  .el-main{
+     margin-left: 21%;
+     margin-top: 70px;
+  }
+  .el-footer{
+     margin-left: 21%;
+  }
 }
 </style>
