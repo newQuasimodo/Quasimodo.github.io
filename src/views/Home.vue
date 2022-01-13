@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="bg">
+    <!-- <div class="bg">
       <vue-particles
         class="login-bg"
         color="#39AFFD"
@@ -20,7 +20,7 @@
         clickMode="push"
       >
       </vue-particles>
-    </div>
+    </div> -->
     <el-container id="container" style="width:100%;clear:both;">
       <el-aside  width="15%">
         <Aside />
@@ -68,13 +68,14 @@ export default {
   text-align: center;
   margin: 0 auto;
   width: 1300px;
-  .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  //  height: 100%;
+  // .bg {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  // }
   .el-aside{
     position: fixed;
     top: 0;
@@ -85,7 +86,7 @@ export default {
     position: fixed;
     top: 0;
     margin-left: 15%;
-    z-index: 999;
+    z-index: 99;
     background-color: #131516;
   }
   .el-main{

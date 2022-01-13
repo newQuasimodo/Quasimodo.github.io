@@ -59,7 +59,7 @@ export default {
   height: 80px;
   line-height: 80px;
   display: grid;
-  grid-template-columns: 12fr 6fr 6.2fr;
+  grid-template-columns: 12fr 6fr 6.7fr;
   .item {
     height: 80px;
     text-align: left;
@@ -70,9 +70,13 @@ export default {
   .player {
   }
   .tools {
-    padding-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 5px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+
   }
   /deep/.el-input__inner {
     background-color: transparent !important;

@@ -8,7 +8,9 @@
         <i class="el-icon-bell"></i>
         在这里，你可以找到学习资料，包括但是不限于
         电子词典资料，书籍。其次，这也是一个技术交流的论坛，在这里，请随意讨论资料的获取以及自行制作的细节和步骤，在这里，你可以是过客，你也可以是参与者，你可以是学生，你也可以是老师——如果你愿意的话。）
-        如有疑问请加群：<img
+        如有疑问请加群：
+        <img
+          @click="openQQ"
           src="https://pub.idqqimg.com/wpa/images/group.png"
           alt=""
         />
@@ -18,7 +20,11 @@
       <div class="title">
         <h1>卡西博客-自由、开放的个人学习、交流的博客</h1>
         网站源码分享，站点建设教程，梦溪的博客。QQ群：123456
-        <img src="https://pub.idqqimg.com/wpa/images/group.png" alt="" />
+        <img
+          @click="openQQ"
+          src="https://pub.idqqimg.com/wpa/images/group.png"
+          alt=""
+        />
         <br />
       </div>
       <div class="caroousel">
@@ -116,6 +122,13 @@
           </li>
         </ul>
       </div>
+      <!-- 标签页 -->
+      <div class="tabs">
+        <h1>标签页</h1>
+        <div id="echarts" @click="goCd">
+         1234
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -148,6 +161,18 @@ export default {
     handleClick(tab, event) {
       console.log(tab, event);
     },
+    openQQ() {
+      window.open(
+        "tencent://message/?Menu=yes&uin=740139373&Site=80fans&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a545b1714f9d45",
+        "_blank"
+      );
+    },
+    goCd() {
+      // window.open(
+      //   "http://www.huaxuejia.cn/ism/mol/examples/#",'name=_parent - URL','width=600,height=400'
+      // );
+      this.$router.push('/about')
+    },
   },
 };
 </script>
@@ -155,7 +180,7 @@ export default {
 .main {
   display: grid;
 
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr 1.5fr;
   .tips {
     letter-spacing: 2px;
     padding: 15px;
@@ -163,6 +188,9 @@ export default {
     background-color: #3f3607;
     color: wheat;
     text-align: left;
+    img {
+      cursor: pointer;
+    }
     .closed {
       position: absolute;
       right: -5px;
@@ -176,6 +204,10 @@ export default {
     margin-left: 10px;
     h1 {
       font-size: 20px;
+    }
+    img {
+      cursor: pointer;
+      z-index: 999;
     }
   }
   .pages {
@@ -193,7 +225,7 @@ export default {
 
     color: #6f6b64;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 5px 0 20px;
     h1 {
       font-size: 16px;
 
@@ -216,7 +248,7 @@ export default {
       }
       .img1 {
         margin-top: 8px;
-        width: 30px;
+        width: 54px;
         margin-right: 10px;
         img {
           width: 100%;
